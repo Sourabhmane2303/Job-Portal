@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Connectwith</title>
+
+<style>
+
+/* BODY */
+body{
+font-family: Arial;
+background:#f4f6f9;
+margin:0;
+}
+
+/* JOB CARDS */
+
+.card{
+width:750px;
+background:white;
+margin:20px auto;
+padding:20px;
+border-radius:10px;
+box-shadow:0 4px 8px rgba(0,0,0,0.1);
+cursor:pointer;
+}
+
+.card img{
+width:180px;
+height:90px;
+object-fit:contain;
+}
+
+.card h2{
+margin-top:10px;
+}
+
+.card:hover{
+transform:scale(1.02);
+transition:0.3s;
+}
+
+/* SIDEBAR */
+
+.sidebar{
+height:100%;
+width:0;
+position:fixed;
+top:0;
+right:0;
+background:white;
+overflow-x:hidden;
+overflow-y:auto;
+transition:0.4s;
+box-shadow:-4px 0 10px rgba(0,0,0,0.2);
+padding-top:20px;
+z-index:999;
+}
+
+/* CLOSE BUTTON */
+
+.close-btn{
+position:absolute;
+top:10px;
+right:25px;
+font-size:30px;
+cursor:pointer;
+}
+
+/* JOB DESCRIPTION CARD */
+
+.card14{
+padding:30px;
+}
+
+/* JOB BUTTONS */
+
+.button-2{
+background:#d4f8d4;
+border:none;
+padding:8px 14px;
+border-radius:6px;
+margin-right:10px;
+}
+
+.button-3{
+background:#d4f8d4;
+border:none;
+padding:8px 14px;
+border-radius:6px;
+}
+
+/* APPLY BUTTON */
+
+.button-27{
+background:#0a66c2;
+color:white;
+border:none;
+padding:15px 25px;
+border-radius:10px;
+cursor:pointer;
+font-size:16px;
+margin-top:20px;
+}
+
+.button-27:hover{
+background:#084d91;
+}
+
+/* ICONS */
+
+.logo-container img{
+width:30px;
+margin-right:10px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- JOB CARD 1 -->
+
+<div class="card" onclick="openNav()">
+<img src="https://cdn.worldvectorlogo.com/logos/infosys-3.svg">
+<h2>Infosys</h2>
+<h3>Oracle PL/SQL Developer</h3>
+<p>Click to see job details</p>
+</div>
+
+<!-- JOB CARD 2 -->
+
+<div class="card" onclick="openNav()">
+<img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Tata_Consultancy_Services_Logo.svg">
+<h2>TCS</h2>
+<h3>Java Developer</h3>
+<p>Click to see job details</p>
+</div>
+
+<!-- JOB CARD 3 -->
+
+<div class="card" onclick="openNav()">
+<img src="https://upload.wikimedia.org/wikipedia/commons/e/e5/L%26T.png">
+<h2>L&T Technology</h2>
+<h3>Junior Software Developer</h3>
+<p>Click to see job details</p>
+</div>
+
+
+<!-- SIDEBAR -->
+
+<div id="mySidebar" class="sidebar">
+
+<span class="close-btn" onclick="closeNav()">&times;</span>
+
+<div class="card14">
+
+<h1>Java Microservices Developer</h1>
+<p><b>L&T Technology Services</b></p>
+
+<button class="button-2">Hybrid</button>
+<button class="button-3">Full Time</button>
+
+<br><br>
+
+<h3>About the Job</h3>
+
+<p>
+Individual contributor and Java/J2EE Developer with strong knowledge of
+Java, Database, Spring Framework and Shell scripting.
+</p>
+
+<h3>Roles and Responsibilities</h3>
+
+<ul>
+<li>Design and development</li>
+<li>Code reviews</li>
+<li>Build and release process</li>
+<li>Mentor junior developers</li>
+<li>Application maintenance</li>
+</ul>
+
+<h3>Required Skills</h3>
+
+<ul>
+<li>Core Java</li>
+<li>Spring Framework</li>
+<li>SQL / PL SQL</li>
+<li>Linux</li>
+</ul>
+
+<h3>Preferred Skills</h3>
+
+<ul>
+<li>Docker</li>
+<li>Spring Batch</li>
+<li>Autosys</li>
+</ul>
+
+<button class="button-27" onclick="apply()">Apply</button>
+
+</div>
+</div>
+
+
+<script>
+
+function openNav(){
+document.getElementById("mySidebar").style.width="450px";
+}
+
+function closeNav(){
+document.getElementById("mySidebar").style.width="0";
+}
+
+function apply(){
+window.location.href="form.html";
+}
+
+</script>
+
+</body>
+</html>

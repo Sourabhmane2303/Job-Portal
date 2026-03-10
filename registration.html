@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registration Form</title>
+
+<style>
+
+body{
+    font-family: Arial, sans-serif;
+    background:#f4f6fb;
+    margin:0;
+}
+
+/* Form container */
+form{
+    max-width:500px;
+    margin:70px auto;
+    background:white;
+    padding:20px;
+    border-radius:8px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+    border:3px solid #007BFF;
+}
+
+/* Header */
+nav{
+    background:#007BFF;
+    padding:10px;
+}
+
+h2{
+    text-align:center;
+    color:white;
+    margin:0;
+}
+
+/* Labels */
+label{
+    display:block;
+    margin-top:12px;
+    font-weight:bold;
+}
+
+/* Inputs */
+input,select{
+    width:100%;
+    padding:8px;
+    margin-top:5px;
+    box-sizing:border-box;
+    border:1px solid #ccc;
+    border-radius:4px;
+}
+
+/* Button */
+button{
+    width:100%;
+    margin-top:15px;
+    padding:10px;
+    background:#007BFF;
+    color:white;
+    border:none;
+    border-radius:5px;
+    font-size:16px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#0056b3;
+}
+
+/* Footer */
+footer{
+    text-align:center;
+    margin-top:10px;
+}
+
+footer a{
+    color:#007BFF;
+    text-decoration:none;
+}
+
+footer a:hover{
+    text-decoration:underline;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<form id="registrationForm" action="/register" method="post">
+
+<nav>
+<h2>Registration Form</h2>
+</nav>
+
+<label for="fullname">Full Name</label>
+<input type="text" id="fullname" name="fullname" required>
+
+<label for="email">Email</label>
+<input type="email" id="email" name="email" required>
+
+<label for="password">Password</label>
+<input type="password" id="password" name="password" required>
+
+<label for="designation">Select Designation</label>
+<select id="designation" name="designation" required>
+<option>Select</option>
+<option value="student">Student</option>
+<option value="java developer">Java Developer</option>
+<option value="python developer">Python Developer</option>
+<option value="backend developer">Backend Developer</option>
+<option value="frontend developer">Frontend Developer</option>
+<option value="android developer">Android Developer</option>
+<option value="ios developer">iOS Developer</option>
+<option value="graphics designer">Graphics Designer</option>
+<option value="mechanical engineer">Mech. Engg</option>
+<option value="chemical engineer">Chem. Engg</option>
+<option value="other">Other</option>
+</select>
+
+<button type="submit">Submit</button>
+
+<footer>
+<p>Already having account? <a href="login.html">Login here</a></p>
+</footer>
+
+</form>
+
+</body>
+</html>
